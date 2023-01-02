@@ -2,7 +2,10 @@ import Profile from 'components/Profile/Profile'
 import Statistics from 'components/Statistics/Statistics'
 import FriendList from 'components/FriendList/FriendList'
 import TransactionHistory from 'components/TransactionHistory/TransactionHistory'
-import {user , transactions , friends , data } from 'data'
+import  user from 'data/user.json'
+import transactions from 'data/transactions.json'
+import friends from 'data/friends.json'
+import data from 'data/data.json'
 export const App = () => {
   return (
     
