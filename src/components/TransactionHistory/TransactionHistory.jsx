@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import {Transaction,Thead,Th,Td} from './TransactionHistory.styled';
+import {Transaction,Thead,Th,Td} from 'components/TransactionHistory/TransactionHistory.styled';
 export default function TransactionHistory({items}){
     return(
 <Transaction>

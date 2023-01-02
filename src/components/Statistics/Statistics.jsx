@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { FaPercentage } from 'react-icons/fa';
-import {StatisticsWrapper,Label,Title,List,Item,Info} from './Statistics.styled';
+import {StatisticsWrapper,Label,Title,List,Item,Info} from 'components/Statistics/Statistics.styled';
 export default function Statistics({stats,title="Upload stats"}){
     return (
         <StatisticsWrapper>

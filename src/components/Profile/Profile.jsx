@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import {Wrapper, Description,Avatar,Stats,Label,Item,P} from './Profile.styled'
+import {Wrapper, Description,Avatar,Stats,Label,Item,P} from 'components/Profile/Profile.styled'
 export default function Profile ({user:{username,tag,location,avatar,stats}}){
 
     return ( <Wrapper >
