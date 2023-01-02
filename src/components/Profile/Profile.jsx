@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import {Wrapper, Description,Avatar,Stats,Label,Item,P} from 'components/Profile/Profile.styled'
-export default function Profile ({user:{username,tag,location,avatar,stats}}){
+export default function Profile ({user:{username,tag,location,avatar,stats:{followers,views,likes}}}){
 
     return ( <Wrapper >
       <Description>
@@ -9,21 +9,21 @@ export default function Profile ({user:{username,tag,location,avatar,stats}}){
           alt={username}
         />
         <P >{username}</P>
-        <P >{tag}</P>
+        <P >@{tag}</P>
         <P >{location}</P>
       </Description>
       <Stats>
         <Item>
           <Label>Followers</Label>
-          <Label>{stats.followers}</Label>
+          <Label>{followers}</Label>
         </Item>
         <Item>
           <Label>Views</Label>
-          <Label>{stats.views}</Label>
+          <Label>{views}</Label>
         </Item>
         <Item>
           <Label>Likes</Label>
-          <Label >{stats.likes}</Label>
+          <Label >{likes}</Label>
         </Item>
       </Stats>
     </Wrapper>)
@@ -35,9 +35,9 @@ Profile.propTypes ={
     location:PropTypes.string.isRequired,
     avatar:PropTypes.string.isRequired,
     stats:PropTypes.shape(
-      {followers: PropTypes.number,
-      views :PropTypes.number,
-      likes :PropTypes.number}
+      {followers: PropTypes.number.isRequired,
+      views :PropTypes.number.isRequired,
+      likes :PropTypes.number.isRequired}
   )}
 
   )

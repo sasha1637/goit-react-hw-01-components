@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import { FaPercentage } from 'react-icons/fa';
 import {StatisticsWrapper,Label,Title,List,Item,Info} from 'components/Statistics/Statistics.styled';
-export default function Statistics({stats,title="Upload stats"}){
+export default function Statistics({stats,title}){
     return (
         <StatisticsWrapper>
-  <Title>{title}</Title>
+{title && (<Title>{title}</Title>)}
    <List>
 {stats.map(({id,label,percentage})=>{
     return  (  <Item key={id}>
@@ -22,8 +22,8 @@ Statistics.propTypes={
     stats:PropTypes.arrayOf(
         PropTypes.shape({
             id:PropTypes.string.isRequired,
-            label:PropTypes.string,
-            percentage:PropTypes.number
+            label:PropTypes.string.isRequired,
+            percentage:PropTypes.number.isRequired,
         })
 
     )
