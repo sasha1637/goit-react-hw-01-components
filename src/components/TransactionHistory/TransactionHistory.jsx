@@ -12,9 +12,7 @@ export default function TransactionHistory({items}){
   </Thead>
 
   <tbody>
-
-    {
-items.map(({id,type,amount,currency})=>{
+    {items.map(({id,type,amount,currency})=>{
     return(
     <tr key={id}>
         <Td>{type}</Td>
@@ -23,11 +21,9 @@ items.map(({id,type,amount,currency})=>{
       </tr>
 
     )
-})
-    }
+    })}
   </tbody>
 </Transaction>
-
     )
 } 
 

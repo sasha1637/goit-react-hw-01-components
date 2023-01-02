@@ -10,16 +10,16 @@ export const Wrapper = styled.div`
   margin-bottom:20px;
 `
 export const Description=styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 `
 export const Avatar =styled.img`
-padding:0 auto;
-width: 120px;
-border-radius: 50%;
-background-color: rgb(197, 197, 197);
+  padding:0 auto;
+  width: 120px;
+  border-radius: 50%;
+  background-color: rgb(197, 197, 197);
 `
 export const Stats= styled.ul`
   display: flex;
@@ -34,19 +34,19 @@ export const Label=styled.span`
   color: rgb(143, 139, 139);
 `
 export const Item=styled.li`
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
   flex-direction: column;
   padding-top: 8px;
   padding-bottom: 8px;
-   width: 100%;
-   :not(:last-child) {
-border-right: 4px solid rgb(216, 215, 215)
+  width: 100%;
+    :not(:last-child) {
+      border-right: 4px solid rgb(216, 215, 215)
 }
 
 `
 export const P=styled.p`
-padding-bottom:8px;
- font-size: 16px;
- color: rgb(143, 139, 139);
+  padding-bottom:8px;
+  font-size: 16px;
+  color: rgb(143, 139, 139);
 `

@@ -11,9 +11,9 @@ return (
 }
 FriendListItem.propTypes={
     friend:PropTypes.shape({
-         name:PropTypes.string.isRequired,
-        avatar:PropTypes.string.isRequired,
-         isOnline:PropTypes.bool.isRequired  
+            name:PropTypes.string.isRequired,
+            avatar:PropTypes.string.isRequired,
+            isOnline:PropTypes.bool.isRequired  
     })
 
 }

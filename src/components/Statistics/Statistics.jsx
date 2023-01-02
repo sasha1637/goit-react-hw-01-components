@@ -4,17 +4,17 @@ import {StatisticsWrapper,Label,Title,List,Item,Info} from 'components/Statistic
 export default function Statistics({stats,title}){
     return (
         <StatisticsWrapper>
-{title && (<Title>{title}</Title>)}
-   <List>
-{stats.map(({id,label,percentage})=>{
-    return  (  <Item key={id}>
-        <Label >{label}</Label>
-        <Info >{percentage}<FaPercentage/></Info>
-       </Item>)
-    
-})}
-    </List>
-   </StatisticsWrapper>
+            {title && (<Title>{title}</Title>)}
+            <List>
+                {stats.map(({id,label,percentage})=>{
+                    return (
+                        <Item key={id}>
+                            <Label >{label}</Label>
+                            <Info >{percentage}<FaPercentage/></Info>
+                        </Item>)
+                })}
+            </List>
+        </StatisticsWrapper>
     )
 }
 Statistics.propTypes={
@@ -25,6 +25,5 @@ Statistics.propTypes={
             label:PropTypes.string.isRequired,
             percentage:PropTypes.number.isRequired,
         })
-
     )
 }

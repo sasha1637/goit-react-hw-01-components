@@ -5,12 +5,10 @@ import TransactionHistory from 'components/TransactionHistory/TransactionHistory
 import  {user,transactions,friends,data} from 'data'
 export const App = () => {
   return (
-    
     <>
-<Profile user={user}/>
-<FriendList friends={friends} />
-<Statistics  stats={data} />
-<TransactionHistory items={transactions} />
-</>
-)
-};
+      <Profile user={user}/>
+      <FriendList friends={friends} />
+      <Statistics  stats={data} />
+      <TransactionHistory items={transactions} />
+    </>
+)};
