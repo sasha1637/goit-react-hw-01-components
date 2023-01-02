@@ -1,5 +1,5 @@
-import  user from './user.json'
-import transactions from './transactions.json'
-import friends from './friends.json'
-import data from './data.json'
+import  user from 'data/user.json'
+import transactions from 'data/transactions.json'
+import friends from 'data/friends.json'
+import data from 'data/data.json'
 export {user,transactions,friends,data};
